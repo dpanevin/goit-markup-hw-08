@@ -1,0 +1,28 @@
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 170px;
+    min-height: 90px;
+
+    color: var(--icons-color);
+    border: 1px solid var(--icons-color);
+    border-radius: 4px;
+    transition: color 250ms var(--transition-timing-function),
+      border-color 250ms var(--transition-timing-function);
+  }
+
+  &-link:hover,
+  &-link:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+
+  &-icon {
+    fill: currentColor;
+  }
+}

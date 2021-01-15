@@ -1,0 +1,40 @@
+.features-list {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-img {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+    margin-bottom: 30px;
+
+    background-color: #f5f4fa;
+    border-radius: 4px;
+  }
+
+  &-title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--main-title-color);
+  }
+
+  &-descr {
+    color: var(--main-text-color);
+  }
+}
+
+.features-list-item {
+  &:not(:last-child) {
+    @media screen and (max-width: $tablet - 1) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
+}

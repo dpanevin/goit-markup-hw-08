@@ -1,0 +1,26 @@
+@import "./utils/variables";
+
+// BASE
+@import "./base/common";
+
+// COMPONENTS
+@import "./components/components";
+@import "./components/logo";
+
+// WRAPPER
+@import "./layout/header";
+@import "./layout/footer";
+
+// LAYOUT index.html
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/about";
+@import "./layout/team";
+@import "./layout/clients";
+
+// LAYOUT portfolio.html
+@import "./layout/filter";
+@import "./layout/projects";
+
+// LAYOUT MODAL WINDOW
+@import "./layout/modal";
