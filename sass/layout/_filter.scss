@@ -2,7 +2,15 @@
   &-list {
     display: flex;
     align-items: center;
-    padding-bottom: 50px;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: $tablet - 1) {
+      margin-bottom: 25px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 50px;
+    }
   }
   &-btn {
     padding: 6px 22px;
@@ -22,6 +30,10 @@
     transition: color 250ms var(--transition-timing-function),
       background-color 250ms var(--transition-timing-function),
       box-shadow 250ms var(--transition-timing-function);
+
+    @media screen and (max-width: $tablet - 1) {
+      margin-bottom: 15px;
+    }
   }
 
   &-list-item:not(:last-child) {

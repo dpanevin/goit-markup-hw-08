@@ -3,22 +3,32 @@
 }
 
 .footer > .container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (max-width: $tablet - 1) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
-.footer-logo {
-  display: block;
-  margin-bottom: 20px;
-
-  color: #ffffff;
+.footer-contacts-list {
+  @media screen and (max-width: $tablet - 1) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-contacts-list-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-contacts-list-link {
@@ -45,14 +55,26 @@
 }
 
 .footer-center {
-  margin-left: 70px;
-  margin-right: auto;
+  @media screen and (max-width: $tablet - 1) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 70px;
+    margin-right: auto;
+  }
 }
 
 .footer-social-link-list {
   display: flex;
-  justify-content: space-between;
-  /* padding: 16px 32px 0 32px; */
+
+  @media screen and (max-width: $tablet - 1) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    justify-content: space-between;
+  }
 }
 
 .footer-center-title {
@@ -92,13 +114,17 @@
 }
 
 .footer-email-form {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 2;
   max-width: 570px;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+  }
 }
 
 .footer-email-form-title {
+  display: block;
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -110,6 +136,10 @@
 
 .footer-email-form-field {
   display: flex;
+
+  @media screen and (max-width: $tablet - 1) {
+    flex-direction: column;
+  }
 }
 
 .footer-email-form-input {
@@ -124,6 +154,10 @@
   outline: none;
 
   transition: all 250ms var(--transition-timing-function);
+
+  @media screen and (max-width: $tablet - 1) {
+    margin-bottom: 20px;
+  }
 }
 
 .footer-email-form-input:focus {
@@ -141,7 +175,6 @@
   display: flex;
   align-items: center;
   min-width: 200px;
-  margin-left: 12px;
 
   padding: 10px 29px;
   font-weight: 700;
@@ -159,6 +192,15 @@
   cursor: pointer;
 
   transition: background-color 250ms var(--transition-timing-function);
+
+  @media screen and (max-width: $tablet - 1) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 12px;
+  }
 }
 
 .footer-email-form-btn:hover,

@@ -8,6 +8,11 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: all 250ms var(--transition-timing-function);
+  z-index: 999;
+
+  @media screen {
+    min-height: 609px;
+  }
 }
 
 .modal-window {

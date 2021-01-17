@@ -1,13 +1,25 @@
 .projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 
   &-item {
-    max-width: 370px;
     box-sizing: border-box;
-    margin: 15px;
+
     background: #ffffff;
+
+    @media screen and (max-width: $tablet - 1) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      max-width: 370px;
+      margin: 15px;
+    }
   }
 
   &-link {
@@ -53,6 +65,7 @@
 
   &-img {
     display: block;
+    width: 100%;
   }
 
   &-item-discr {

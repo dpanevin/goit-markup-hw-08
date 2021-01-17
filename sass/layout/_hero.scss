@@ -12,7 +12,8 @@
   & > .container {
     text-align: center;
     @media screen and (max-width: $tablet - 1) {
-      padding: 118px 60px;
+      padding-top: 118px;
+      padding-bottom: 118px;
       min-height: 480px;
     }
 
@@ -35,6 +36,8 @@
     color: #ffffff;
 
     @media screen and (max-width: $tablet - 1) {
+      max-width: 380px;
+
       font-size: 26px;
       line-height: 1.62;
     }
