@@ -10,10 +10,24 @@
     text-align: center;
   }
 
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   @media screen and (min-width: $desktop) {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+  }
+}
+
+.footer-left {
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+    text-align: center;
+    margin-right: 165px;
   }
 }
 
@@ -59,6 +73,10 @@
     margin-bottom: 60px;
   }
 
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+    text-align: center;
+  }
+
   @media screen and (min-width: $desktop) {
     margin-left: 70px;
     margin-right: auto;
@@ -68,7 +86,7 @@
 .footer-social-link-list {
   display: flex;
 
-  @media screen and (max-width: $tablet - 1) {
+  @media screen and (max-width: $desktop - 1) {
     justify-content: center;
   }
 
@@ -114,100 +132,108 @@
 }
 
 .footer-email-form {
-  max-width: 570px;
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+    width: 450px;
+    margin-top: 60px;
+  }
 
   @media screen and (min-width: $desktop) {
+    max-width: 570px;
     display: flex;
     flex-direction: column;
     flex-grow: 2;
   }
-}
 
-.footer-email-form-title {
-  display: block;
-  margin-bottom: 20px;
-
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-
-  color: #ffffff;
-}
-
-.footer-email-form-field {
-  display: flex;
-
-  @media screen and (max-width: $tablet - 1) {
-    flex-direction: column;
-  }
-}
-
-.footer-email-form-input {
-  width: 100%;
-  height: 50px;
-  padding: 15px 16px;
-
-  color: #ffffff;
-  background: none;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  outline: none;
-
-  transition: all 250ms var(--transition-timing-function);
-
-  @media screen and (max-width: $tablet - 1) {
+  &-title {
+    display: block;
     margin-bottom: 20px;
-  }
-}
 
-.footer-email-form-input:focus {
-  border-color: var(--accent-color);
-}
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
 
-.footer-email-form-input::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
+    color: #ffffff;
 
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-email-form-btn {
-  display: flex;
-  align-items: center;
-  min-width: 200px;
-
-  padding: 10px 29px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  text-decoration: none;
-
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-
-  transition: background-color 250ms var(--transition-timing-function);
-
-  @media screen and (max-width: $tablet - 1) {
-    margin-right: auto;
-    margin-left: auto;
+    @media screen and (max-width: $desktop - 1) {
+      text-align: center;
+    }
   }
 
-  @media screen and (min-width: $desktop) {
-    margin-left: 12px;
+  &-field {
+    display: flex;
+
+    @media screen and (max-width: $desktop - 1) {
+      flex-direction: column;
+    }
   }
-}
 
-.footer-email-form-btn:hover,
-.footer-email-form-btn:focus {
-  background-color: #188ce8;
-}
+  &-input {
+    width: 100%;
+    height: 50px;
+    padding: 15px 16px;
 
-.footer-email-form-icon {
-  margin-left: 10px;
+    color: #ffffff;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    outline: none;
+
+    transition: all 250ms var(--transition-timing-function);
+
+    @media screen and (max-width: $desktop - 1) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &-input:focus {
+    border-color: var(--accent-color);
+  }
+
+  &-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &-btn {
+    display: flex;
+    align-items: center;
+    min-width: 200px;
+
+    padding: 10px 29px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    text-decoration: none;
+
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+
+    transition: background-color 250ms var(--transition-timing-function);
+
+    @media screen and (max-width: $desktop - 1) {
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-left: 12px;
+    }
+  }
+
+  &-btn:hover,
+  &-btn:focus {
+    background-color: #188ce8;
+  }
+
+  &-icon {
+    margin-left: 10px;
+  }
 }

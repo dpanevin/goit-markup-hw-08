@@ -1,7 +1,12 @@
 .features-list {
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+    flex-wrap: wrap;
   }
 
   &-img {
@@ -34,6 +39,11 @@
       margin-bottom: 30px;
     }
   }
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+
   @media screen and (min-width: $desktop) {
     width: 270px;
   }

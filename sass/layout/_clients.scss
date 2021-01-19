@@ -1,9 +1,9 @@
 .clients-list {
   display: flex;
+  justify-content: space-between;
 
-  @media screen and (max-width: $tablet - 1) {
+  @media screen and (max-width: $desktop - 1) {
     flex-wrap: wrap;
-    justify-content: center;
     margin: -15px;
   }
 
@@ -15,6 +15,11 @@
     @media screen and (max-width: $tablet - 1) {
       margin: 15px;
       width: calc((100% - 30px * 2) / 2);
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+      margin: 15px;
+      width: calc((100% - 30px * 3) / 3);
     }
 
     @media screen and (min-width: $desktop) {

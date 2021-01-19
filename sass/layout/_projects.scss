@@ -1,5 +1,5 @@
 .projects-list {
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
@@ -16,9 +16,13 @@
       }
     }
 
-    @media screen and (min-width: $desktop) {
-      max-width: 370px;
+    @media screen and (min-width: $tablet) {
+      max-width: calc((100% - 30px * 2) / 2);
       margin: 15px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      max-width: calc((100% - 30px * 3) / 3);
     }
   }
 

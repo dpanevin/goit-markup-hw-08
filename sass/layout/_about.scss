@@ -1,5 +1,5 @@
 .about {
-  @media screen and (max-width: $tablet - 1) {
+  @media screen and (max-width: $desktop - 1) {
     display: none;
   }
   & > .container {
