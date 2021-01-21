@@ -156,8 +156,8 @@
 
   &-policy-text::before {
     content: "";
-    width: 16px;
-    height: 15px;
+    min-width: 16px;
+    min-height: 15px;
     margin-right: 8px;
 
     border: 2px solid var(--main-title-color);
@@ -167,7 +167,7 @@
   }
 
   &-policy:checked + .modal-form-policy-text::before {
-    background: var(--accent-color) url(../images/icons/icon-check.svg)
+    background: var(--accent-color) url(../images/icons/icon-check.svg) cover
       no-repeat center;
     background-origin: border-box;
   }

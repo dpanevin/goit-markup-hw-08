@@ -118,16 +118,33 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="about-list">
           <li class="about-list-item">
-            <img class="about-list-img" src="./images/about/box1.jpg" alt="Создаем алгоритмы" width="370" height="294" />
+            <picture class="about-list-picture">
+              <source srcset="./images/about/about1-desktop.webp 1x, ./images/about/about1-desktop@2x.webp 2x"
+                media="(min-width: 1200px)">
+              <source srcset="./images/about/about1-desktop.jpg 1x, ./images/about/about1-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <img class="about-list-img" src="./images/about/about1-desktop.jpg" alt="Создаем алгоритмы" />
+            </picture>
             <p class="about-list-desc">Десктопные приложения</p>
           </li>
           <li class="about-list-item">
-            <img class="about-list-img" src="./images/about/box2.jpg" alt="Разрабатываем мобильные преложения" width="370"
-              height="294" />
-              <p class="about-list-desc">Мобильные приложения</p>
+            <picture class="about-list-picture">
+              <source srcset="./images/about/about2-desktop.webp 1x, ./images/about/about2-desktop@2x.webp 2x"
+                media="(min-width: 1200px)">
+              <source srcset="./images/about/about2-desktop.jpg 1x, ./images/about/about2-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <img class="about-list-img" src="./images/about/about2-desktop.jpg" alt="Разрабатываем мобильные преложения" />
+            </picture>
+            <p class="about-list-desc">Мобильные приложения</p>
           </li>
           <li class="about-list-item">
-            <img class="about-list-img" src="./images/about/box3.jpg" alt="Разрабатываем дизайн" width="370" height="294" />
+            <picture class="about-list-picture">
+              <source srcset="./images/about/about3-desktop.webp 1x, ./images/about/about3-desktop@2x.webp 2x"
+                media="(min-width: 1200px)">
+              <source srcset="./images/about/about3-desktop.jpg 1x, ./images/about/about3-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <img class="about-list-img" src="./images/about/about3-desktop.jpg" alt="Разрабатываем дизайн" />
+            </picture>
             <p class="about-list-desc">Дизайнерские решения</p>
           </li>
         </ul>
@@ -139,7 +156,21 @@
          <h2 class="section-title">Наша команда</h2>
       <ul class="team-list">
         <li class="team-list-item">
-          <img class="team-list-img" src="./images/team/team1.jpg" alt="Игорь Демьяненко" width="100%" />
+          <picture class="team-list-picture">
+            <source srcset="./images/team/team1-desktop.webp 1x, ./images/team/team1-desktop@2x.webp 2x"
+              media="(min-width: 1200px)">
+            <source srcset="./images/team/team1-desktop.jpg 1x, ./images/team/team1-desktop@2x.jpg 2x"
+              media="(min-width: 1200px)">
+            <source srcset="./images/team/team1-tablet.webp 1x, ./images/team/team1-tablet@2x.webp 2x"
+              media="(min-width: 768px)">
+            <source srcset="./images/team/team1-tablet.jpg 1x, ./images/team/team1-tablet@2x.jpg 2x"
+              media="(min-width: 768px)">
+            <source srcset="./images/team/team1-mobile.webp 1x, ./images/team/team1-mobile@2x.webp 2x"
+              media="(max-width: 767px)">
+            <source srcset="./images/team/team1-mobile.jpg 1x, ./images/team/team1-mobile@2x.jpg 2x"
+              media="(max-width: 767px)">
+            <img class="team-list-img" src="./images/team/team1-mobile.jpg" alt="Игорь Демьяненко" />
+          </picture>
           <h3 class="team-list-name">Игорь Демьяненко</h3>
           <p class="team-list-position">Product Designer</p>
           <ul class="team-social-link-list">
@@ -174,7 +205,15 @@
           </ul>
         </li>
         <li class="team-list-item">
-          <img class="team-list-img" src="./images/team/team2.jpg" alt="Ольга Репина" width="100%" />
+          <picture class="team-list-picture">
+            <source srcset="./images/team/team2-desktop.webp 1x, ./images/team/team2-desktop@2x.webp 2x" media="(min-width: 1200px)">
+            <source srcset="./images/team/team2-desktop.jpg 1x, ./images/team/team2-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+            <source srcset="./images/team/team2-tablet.webp 1x, ./images/team/team2-tablet@2x.webp 2x" media="(min-width: 768px)">
+            <source srcset="./images/team/team2-tablet.jpg 1x, ./images/team/team2-tablet@2x.jpg 2x" media="(min-width: 768px)">
+            <source srcset="./images/team/team2-mobile.webp 1x, ./images/team/team2-mobile@2x.webp 2x" media="(max-width: 767px)">
+            <source srcset="./images/team/team2-mobile.jpg 1x, ./images/team/team2-mobile@2x.jpg 2x" media="(max-width: 767px)">
+            <img class="team-list-img" src="./images/team/team2-mobile.jpg" alt="Ольга Репина" />
+          </picture>
           <h3 class="team-list-name">Ольга Репина</h3>
           <p class="team-list-position">Frontend Developer</p>
           <ul class="team-social-link-list">
@@ -209,7 +248,17 @@
           </ul>
         </li>
         <li class="team-list-item">
-          <img class="team-list-img" src="./images/team/team3.jpg" alt="Николай Тарасов" width="100%" />
+          <picture class="team-list-picture">
+            <source srcset="./images/team/team3-desktop.webp 1x, ./images/team/team3-desktop@2x.webp 2x"
+              media="(min-width: 1200px)">
+            <source srcset="./images/team/team3-desktop.jpg 1x, ./images/team/team3-desktop@2x.jpg 2x"
+              media="(min-width: 1200px)">
+            <source srcset="./images/team/team3-tablet.webp 1x, ./images/team/team3-tablet@2x.webp 2x" media="(min-width: 768px)">
+            <source srcset="./images/team/team3-tablet.jpg 1x, ./images/team/team3-tablet@2x.jpg 2x" media="(min-width: 768px)">
+            <source srcset="./images/team/team3-mobile.webp 1x, ./images/team/team3-mobile@2x.webp 2x" media="(max-width: 767px)">
+            <source srcset="./images/team/team3-mobile.jpg 1x, ./images/team/team3-mobile@2x.jpg 2x" media="(max-width: 767px)">
+            <img class="team-list-img" src="./images/team/team3-mobile.jpg" alt="Николай Тарасов" />
+          </picture>
           <h3 class="team-list-name">Николай Тарасов</h3>
           <p class="team-list-position">Marketing</p>
           <ul class="team-social-link-list">
@@ -244,7 +293,17 @@
           </ul>
         </li>
         <li class="team-list-item">
-          <img class="team-list-img" src="./images/team/team4.jpg" alt="Михаил Ермаков" width="100%" />
+          <picture class="team-list-picture">
+            <source srcset="./images/team/team4-desktop.webp 1x, ./images/team/team4-desktop@2x.webp 2x"
+              media="(min-width: 1200px)">
+            <source srcset="./images/team/team4-desktop.jpg 1x, ./images/team/team4-desktop@2x.jpg 2x"
+              media="(min-width: 1200px)">
+            <source srcset="./images/team/team4-tablet.webp 1x, ./images/team/team4-tablet@2x.webp 2x" media="(min-width: 768px)">
+            <source srcset="./images/team/team4-tablet.jpg 1x, ./images/team/team4-tablet@2x.jpg 2x" media="(min-width: 768px)">
+            <source srcset="./images/team/team4-mobile.webp 1x, ./images/team/team4-mobile@2x.webp 2x" media="(max-width: 767px)">
+            <source srcset="./images/team/team4-mobile.jpg 1x, ./images/team/team4-mobile@2x.jpg 2x" media="(max-width: 767px)">
+            <img class="team-list-img" src="./images/team/team4-mobile.jpg" alt="Михаил Ермаков" />
+          </picture>
           <h3 class="team-list-name">Михаил Ермаков</h3>
           <p class="team-list-position">UI Designer</p>
           <ul class="team-social-link-list">
@@ -436,7 +495,7 @@
             <textarea name="comment" class="modal-form-comment-input" placeholder="Введите текст"></textarea>
           </label>
           <input id="policy" type="checkbox" class="modal-form-policy visually-hidden" name="policy" value="accepted">
-          <label for="policy" class="modal-form-policy-text"><span>Соглашаюсь с рассылкой и принимаю&nbsp<a href="#" class="policy-link">Условия договора</a></span></label>
+          <label for="policy" class="modal-form-policy-text"><span>Соглашаюсь с рассылкой и принимаю&nbsp <a href="#" class="policy-link">Условия договора</a></span></label>
           <input type="submit" class="modal-form-submit-btn">
         </form>
         <button type="button" class="modal-close-btn" aria-expanded='false' data-modal-close>
